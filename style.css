@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+.outerCard {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 900px;
+    background-color: #FAF9F7;
+    margin: 0 auto;
+    border-radius: 15px;padding-top: 50px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 60px;
+    
+}
+form {
+    display: flex;
+    flex-direction: column;
+}
+.pokeSearch {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    
+    
+}
+
+
+.pokeSearch input {
+    padding-left: 20px;
+    font-size: 16px;
+    font-weight: 100;
+    flex-grow: 1;
+    height: 50px;
+    border: 1px solid grey;
+    border-radius: 10px;
+    
+}
+.pokeSearch button {
+    
+    min-width: 130px;
+    border: 1px solid #A32D2D;
+    border-radius: 10px;
+    background-color: #FCEBEB;
+    font-size: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #791F1F;
+    
+}
+.pokeSearch button:hover {
+    background-color: #fbcccc;
+}
+#messageCard {
+    background-color: #FAEEDA;
+    border: 2px solid #854F0B;
+    border-radius: 10px;
+    color: #854F0B;
+    padding: 10px 20px 10px 20px;
+    font-size: 20px;
+}
+
+.pokeCard {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: white;
+    border: 1px solid rgb(209, 207, 207);
+    border-radius: 15px;
+    margin-top: 10px;
+    
+}
+.simpleColumnContainer {
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+.pokeRow {
+    display: flex;
+    gap: 19px;
+}
+
+.pokeImage {
+    border: 2px solid #854F0B;
+    border-radius: 10px;
+    background-color: #FAEEDA;
+    flex-shrink: 0;
+    width: 220px;
+}
+.pokeColumn {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+
+
+}
+
+.lightText {
+    color: #5F5E5A
+}
+.bubbleRow {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    gap: 7px;
+    flex-wrap: wrap;
+}
+.pokeAbilityBubble {
+    border: 2px solid #5F5E5A;
+    border-radius: 18px;
+    background-color: #F1EFE8;
+    padding: 5px 20px 5px 20px;
+    color: #444441;
+    font-size: 17px;
+}
+
+.pokeTypeBubble {
+    border: 2px solid #854F0B;
+    border-radius: 18px;
+    background-color: #FAEEDA;
+    padding: 5px 20px 5px 20px;
+    color: #854F0B;
+    font-size: 17px;
+}
+
+.statsRowContainer {
+    margin-top: 20px;
+    border-top: 1px solid #E5E3DC;
+    display: flex;
+    flex-direction: row;
+    
+    
+
+}
+
+.statsColumnContainer {
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    flex: 1;
+    gap: 7px;
+    
+    
+}
+
+.statsRow {
+    display: flex;
+    flex-direction: row;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    
+}
+
+.statsColumnLeft {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    flex-shrink: 0;
+}
+
+.statsColumnRight {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    gap: 15px;
+    align-items: center;
+}
+
+.baseBar {
+    
+    height: 15px;
+    border: 1px solid #5F5E5A;
+    border-radius: 20px;
+    background-color: #F1EFE8;
+    flex-grow: 1;
+}
+.fillBar {
+    height: 100%;
+    
+    background-color: #1D9E75;
+    border-radius: 20px;
+}
+.statValue {
+    font-weight: bold;
+}
+.numberAlign {
+    width: 30px;
+    flex-shrink: 0;
+}
+.makeBold {
+    font-weight: bold;
+}
+@media (max-width: 600px) {
+    .pokeRow {
+        flex-direction: column;
+    }
+
+    .statsColumnLeft {
+        width: 130px;
+    }
+
+    .outerCard {
+        padding: 10px;
+    }
+}
